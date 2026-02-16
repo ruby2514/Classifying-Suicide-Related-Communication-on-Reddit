@@ -1,11 +1,11 @@
 # Classifying-Suicide-Related-Communication-on-Reddit
 
-# LNGN445 NLP Project 2025
+ LNGN445 NLP Project 2025
 
 For this project you have to Choose and develop a project that tackles a specific NLP problem or explores a novel
 idea by building on one or more of the three provided seed codes. I chose to do on:
 
-# Logistic Regression + TF–IDF Classification
+ Logistic Regression + TF–IDF Classification
 
 the project involve:
 
