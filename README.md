@@ -84,8 +84,6 @@ colab notebook classifying_suicide_reddit.ipynb
 
 Zirikly, A., Resnik, P., Uzuner, Ö., & Hollingshead, K. (2019). CLPsych 2019 Shared Task: Predicting the Degree of Suicide Risk in Reddit Posts. *Proceedings of the Sixth Workshop on Computational Linguistics and Clinical Psychology*, 1–12.
 
-Gaur, M., Aribandi, Alambo, Kursuncu, Thirunarayan, Beich, Pathak& Sheth. (2021). Characterization of Time-variant and Time-invariant Assessment of Suicidality on Reddit using C-SSRS (Versions Version 2 (Version 1: https://zenodo.org/record/2667859#.YCwdTR1OlQI (no post-level annotation))) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.4543776
-
 ---
 
 ## Author
