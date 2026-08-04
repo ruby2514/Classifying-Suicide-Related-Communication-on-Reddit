@@ -14,7 +14,7 @@ Online posts can reveal early signs of suicidal thoughts, but the signals are of
 
 - 500 anonymized Reddit mental-health posts (one per unique user)
 - Sourced from: [Kaggle – Text Summary with Reddit Mental Health Posts](https://www.kaggle.com/code/shriyapr/text-summary-with-reddit-mental-health-posts/input)
-- Labels: `Supportive`, `Ideation`, `Behavior`, `Attempt`
+- Labels: `Supportive`, `Ideation`, `Behavior`, `Attempt`, `Indicator`
 - Text is short-to-medium length, informal, and conversational
 - Class imbalance present: Ideation posts are most frequent; Attempt posts are least frequent
 
@@ -44,12 +44,13 @@ Reddit Posts → Preprocessing → TF-IDF Vectors → Logistic Regression → Ri
 - **Supportive and Ideation posts are easier to classify** than Behavior and Attempt
 - **High-risk Attempt posts carry less detectable linguistic bias** — meaning the most dangerous posts are hardest to flag automatically, which is a critical failure mode for crisis detection tools
 - **TF-IDF bias scores are near-zero normally distributed**, indicating that TF-IDF weighting partially balances affective signals
-- The model most often **confuses Ideation and Behavior**, reflecting real-world overlap between suicidal thoughts and actions
+- The model most often **confuses Ideation and Indicator**, reflecting real-world overlap between suicidal thoughts and actions
 
 **Top features per category:**
 - `Attempt`: attempt, somebody, suicide attempt, failed
 - `Behavior`: cutting, hospital, felt, kill im
 - `Ideation`: thank, depression, mental depression, mental
+- `Indicator`: behavior, hyperactive, hyperactive behavior, haha
 - `Supportive`: think, sounds, therapist help, chocolate
 
 ---
@@ -82,6 +83,8 @@ colab notebook classifying_suicide_reddit.ipynb
 ## Reference
 
 Zirikly, A., Resnik, P., Uzuner, Ö., & Hollingshead, K. (2019). CLPsych 2019 Shared Task: Predicting the Degree of Suicide Risk in Reddit Posts. *Proceedings of the Sixth Workshop on Computational Linguistics and Clinical Psychology*, 1–12.
+
+Gaur, M., Aribandi, Alambo, Kursuncu, Thirunarayan, Beich, Pathak& Sheth. (2021). Characterization of Time-variant and Time-invariant Assessment of Suicidality on Reddit using C-SSRS (Versions Version 2 (Version 1: https://zenodo.org/record/2667859#.YCwdTR1OlQI (no post-level annotation))) [Dataset]. Zenodo. https://doi.org/10.5281/zenodo.4543776
 
 ---
 
